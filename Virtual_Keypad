@@ -1,0 +1,85 @@
+<html>
+<script>
+document.onkeydown = function (e) 
+{
+return false;
+}
+function g()
+{
+    x=document.getElementById("t1").value;
+    alert(x);
+}
+function h(val)
+{
+    document.getElementById("t1").value=document.getElementById("t1").value+val;
+}
+function i()
+{
+     x=document.getElementById("t1").value;
+     y=x.substr(0, x.length-1);
+    document.getElementById("t1").value=y;
+}
+function k(val)
+{
+document.getElementById("t1").value=val;
+}
+</script>
+<body>
+<p id="p1">
+<center><h2>Enter Your Password Using Virtual Keyboard</h2></center>
+</p>
+<style>
+form,input,button { margin:0px; }
+</style>
+
+<center>
+<table border="1">
+<tr>
+<td colspan='10'><input type="password" id='t1' style="width:304px; height:30px; float:left;" placeholder="Enter Password"></td>
+</tr>
+<tr>
+<td><input type="button" value="q" onclick="h('q')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="w" onclick="h('w')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="e" onclick="h('e')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="r" onclick="h('r')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="t" onclick="h('t')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="y" onclick="h('y')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="u" onclick="h('u')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="i" onclick="h('i')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="o" onclick="h('o')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="p" onclick="h('p')" style="width:25px; height:30px; float:left;"></td>
+</tr>
+<tr>
+<td><input type="button" value="a" onclick="h('a')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="s" onclick="h('s')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="d" onclick="h('d')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="f" onclick="h('f')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="g" onclick="h('g')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="h" onclick="h('h')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="j" onclick="h('j')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="k" onclick="h('k')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="l" onclick="h('l')" style="width:25px; height:30px; float:left;"></td>
+<td rowspan='3'><input type="button" value="C
+L
+E
+A
+R" onclick="k('')" style="width:25px; height:102px; float:left;"></td>
+</tr>
+<tr >
+<td><input type="button" value="z" onclick="h('z')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="x" onclick="h('x')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="c" onclick="h('c')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="v" onclick="h('v')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="b" onclick="h('b')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="n" onclick="h('n')" style="width:25px; height:30px; float:left;"></td>
+<td><input type="button" value="m" onclick="h('m')" style="width:25px; height:30px; float:left;"></td>
+<td colspan='2'><input type="button" value="BackS" onclick="i()" style="width:56px; height:30px; float:left;"></td>
+</tr>
+<tr>
+<td colspan='4'><input type="button" value="Spacebar" onclick="h('&nbsp')" style="width:118px; height:30px; float:left;"></td>
+<td colspan='3'><input type="button" value="Enter" onclick="g()" style="width:87px; height:30px; float:left;"></td>
+<td colspan='2'><input type="button" value="CapsL" onclick="j()" style="width:56px; height:30px; float:left;"></td>
+</tr>
+</center>
+</body>
+</html>
